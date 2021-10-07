@@ -1,7 +1,7 @@
 class trade {
 public:
 	// the parameter array
-	int parameter[14]; 
+	int parameter[15]; 
 
 	// four buying strategy
 	// 1. If the past k1 days' volume raise k2 percent, buy
@@ -31,7 +31,7 @@ public:
 
 	// some helper variables and functions
 
-	double past_k_days_volume;
+	double past_k_days_average_volume;
 	double past_k_days_average_price;
 	double past_k_days_highest;
 	double past_k_days_lowest;
@@ -41,6 +41,7 @@ public:
 	int day;
 	double gain;
 	double current_money;
+	double current_bitcoin;
 	double bitcoin_price[3][2600];
 
 };
